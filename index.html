@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clínica SaludPlus - Atención médica de calidad">
+  <title>Clínica SaludPlus | Tu Salud en Primer Lugar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER Y NAVEGACIÓN -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="logo">
+          <i class="fas fa-heartbeat"></i> SaludPlus
+        </a>
+        <ul class="nav-menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#horarios">Horarios</a></li>
+          <li><a href="#citas">Citas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="nav-toggle" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Tu salud es nuestra <span>prioridad</span></h1>
+        <p>Atención médica integral con profesionales altamente calificados. Reserva tu cita en minutos.</p>
+        <a href="#citas" class="btn btn-primary">Reservar Cita</a>
+        <a href="#servicios" class="btn btn-outline">Ver Servicios</a>
+      </div>
+      <div class="hero-image">
+        <i class="fas fa-user-md"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="servicios" id="servicios">
+    <div class="container">
+      <h2 class="section-title">Nuestros Servicios</h2>
+      <p class="section-subtitle">Contamos con las especialidades médicas más importantes</p>
+      <div class="grid-servicios">
+        <div class="card-servicio">
+          <i class="fas fa-stethoscope"></i>
+          <h3>Consulta General</h3>
+          <p>Evaluación médica completa para diagnosticar y tratar tus dolencias.</p>
+        </div>
+        <div class="card-servicio">
+          <i class="fas fa-tooth"></i>
+          <h3>Odontología</h3>
+          <p>Cuidado dental profesional, desde limpiezas hasta ortodoncia.</p>
+        </div>
+        <div class="card-servicio">
+          <i class="fas fa-flask"></i>
+          <h3>Laboratorio Clínico</h3>
+          <p>Análisis clínicos precisos con resultados en el menor tiempo.</p>
+        </div>
+        <div class="card-servicio">
+          <i class="fas fa-baby"></i>
+          <h3>Ecografías</h3>
+          <p>Diagnóstico por imágenes con tecnología de última generación.</p>
+        </div>
+        <div class="card-servicio">
+          <i class="fas fa-heart"></i>
+          <h3>Cardiología</h3>
+          <p>Evaluación cardiovascular y prevención de enfermedades cardíacas.</p>
+        </div>
+        <div class="card-servicio">
+          <i class="fas fa-eye"></i>
+          <h3>Oftalmología</h3>
+          <p>Cuidado integral de la vista y corrección de problemas visuales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HORARIOS -->
+  <section class="horarios" id="horarios">
+    <div class="container">
+      <h2 class="section-title">Horarios de Atención</h2>
+      <div class="grid-horarios">
+        <div class="card-horario">
+          <i class="fas fa-calendar-day"></i>
+          <h3>Lunes a Sábado</h3>
+          <p>8:00 am - 8:00 pm</p>
+        </div>
+        <div class="card-horario">
+          <i class="fas fa-calendar-alt"></i>
+          <h3>Domingos</h3>
+          <p>9:00 am - 1:00 pm</p>
+        </div>
+        <div class="card-horario">
+          <i class="fas fa-phone"></i>
+          <h3>Emergencias 24/7</h3>
+          <p>Llámanos al (01) 555-1234</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CITA -->
+  <section class="citas" id="citas">
+    <div class="container">
+      <h2 class="section-title">Reserva tu Cita</h2>
+      <p class="section-subtitle">Completa el formulario y nos pondremos en contacto contigo</p>
+      <form id="formCita" class="form-cita">
+        <div class="form-group">
+          <label for="nombre"><i class="fas fa-user"></i> Nombre completo</label>
+          <input type="text" id="nombre" placeholder="Ingresa tu nombre completo" required>
+        </div>
+        <div class="form-group">
+          <label for="telefono"><i class="fas fa-phone"></i> Teléfono</label>
+          <input type="tel" id="telefono" placeholder="Ej: 987654321" required>
+        </div>
+        <div class="form-group">
+          <label for="fecha"><i class="fas fa-calendar"></i> Fecha de cita</label>
+          <input type="date" id="fecha" required>
+        </div>
+        <div class="form-group">
+          <label for="especialidad"><i class="fas fa-stethoscope"></i> Especialidad</label>
+          <select id="especialidad" required>
+            <option value="">Seleccione una especialidad</option>
+            <option>Consulta General</option>
+            <option>Odontología</option>
+            <option>Laboratorio Clínico</option>
+            <option>Ecografía</option>
+            <option>Cardiología</option>
+            <option>Oftalmología</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <i class="fas fa-check-circle"></i> Reservar Cita
+        </button>
+      </form>
+      <p id="mensajeCita" class="mensaje-cita"></p>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <h2 class="section-title">Contáctanos</h2>
+      <div class="grid-contacto">
+        <div class="card-contacto">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Dirección</h3>
+          <p>Av. Salud 123, Lima - Perú</p>
+        </div>
+        <div class="card-contacto">
+          <i class="fas fa-phone-alt"></i>
+          <h3>Teléfono</h3>
+          <p>(01) 555-1234</p>
+        </div>
+        <div class="card-contacto">
+          <i class="fas fa-envelope"></i>
+          <h3>Correo</h3>
+          <p>contacto@saludplus.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Clínica SaludPlus. Todos los derechos reservados.</p>
+      <p>Proyecto desarrollado con HTML, CSS y JavaScript</p>
+    </div>
+  </footer>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <button id="btnArriba" class="btn-arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
